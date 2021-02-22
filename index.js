@@ -12,6 +12,6 @@ app.get("/", function (req, res) {
 
 app.use("/", express.static(public));
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3030, () => {
   console.log("Predepolyment server is up and running.");
 });
