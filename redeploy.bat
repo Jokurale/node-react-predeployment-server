@@ -1,3 +1,4 @@
+@echo off
 rmdir /s /q build
 git add .
 git commit --allow-empty-message -m ""
