@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+
 app.use(express.static(path.join(__dirname, "build")));
 
 app.get("/", function (req, res) {
@@ -11,4 +12,5 @@ app.get("*", function (req, res) {
   res.status(404).sendFile(path.join(__dirname, "static", "404.html"));
 });
 
-app.listen(process.env.PORT || 8080);
+
+app.listen(process.env.PORT || 8080)
