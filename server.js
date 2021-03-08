@@ -13,4 +13,6 @@ app.get("*", function (req, res) {
 });
 
 
-app.listen(process.env.PORT || 8080)
+app.listen(3000, () => {
+	console.log("[INFO] sdly-pl-react-app is up and running.")
+})
