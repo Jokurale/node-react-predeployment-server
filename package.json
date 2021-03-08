@@ -1,5 +1,5 @@
 {
-  "name": "react-node-testing-server",
+  "name": "sdly-pl-react-app deployment server with message handling feature included.",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/Jokurale/node-react-predeployment-server#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
+    "mongoose": "^5.11.19",
+    "morgan": "^1.10.0"
   }
 }
